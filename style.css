@@ -24,9 +24,9 @@ body {
   color: var(--text);
 }
 
-/* Links */
 a {
   color: var(--accent);
+  text-decoration: underline;
 }
 
 a:hover,
@@ -34,7 +34,6 @@ a:focus {
   text-decoration: none;
 }
 
-/* Better default spacing */
 p {
   margin: 0.6rem 0;
 }
@@ -45,13 +44,15 @@ h2 {
   margin: 0 0 0.6rem;
 }
 
-/* Layout container */
 .container {
   width: min(980px, 92%);
   margin: 0 auto;
 }
 
-/* Skip link for accessibility */
+main {
+  padding: 1.2rem 0 2.2rem;
+}
+
 .skip-link {
   position: absolute;
   left: -9999px;
@@ -68,7 +69,6 @@ h2 {
   top: 0.8rem;
 }
 
-/* Header / Navigation */
 header {
   background: #ffffff;
   border-bottom: 1px solid var(--line);
@@ -87,7 +87,6 @@ header {
   letter-spacing: 0.2px;
 }
 
-/* Nav list */
 nav ul {
   list-style: none;
   padding: 0;
@@ -119,11 +118,6 @@ nav a[aria-current="page"] {
   font-weight: 650;
 }
 
-/* Main / Cards */
-main {
-  padding: 1.2rem 0 2.2rem;
-}
-
 .card {
   background: var(--card);
   border: 1px solid var(--line);
@@ -139,27 +133,23 @@ main {
   margin-top: 0.25rem;
 }
 
-/* Projects list */
 .case-list {
   display: grid;
   gap: 1rem;
   margin-top: 1rem;
 }
 
-/* Make lists look clean */
 ul {
   margin-top: 0.5rem;
   margin-bottom: 0;
   padding-left: 1.2rem;
 }
 
-/* Forms (Contact Page) */
 form {
   max-width: 520px;
   margin-top: 0.6rem;
 }
 
-/* Each field wrapper */
 .form-group {
   display: flex;
   flex-direction: column;
@@ -186,7 +176,6 @@ textarea {
   resize: vertical;
 }
 
-/* Buttons */
 button {
   padding: 0.7rem 0.95rem;
   border-radius: 14px;
@@ -205,7 +194,6 @@ button:active {
   transform: translateY(1px);
 }
 
-/* Accessible focus styles */
 a:focus,
 input:focus,
 textarea:focus,
@@ -214,7 +202,30 @@ button:focus {
   outline-offset: 2px;
 }
 
-/* Footer */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 0.75rem;
+}
+
+caption {
+  text-align: left;
+  font-weight: 700;
+  padding: 0.5rem 0;
+}
+
+th,
+td {
+  border: 1px solid var(--line);
+  padding: 0.7rem;
+  text-align: left;
+  vertical-align: top;
+}
+
+th {
+  background: #f6f6fb;
+}
+
 footer {
   background: #ffffff;
   border-top: 1px solid var(--line);
@@ -222,7 +233,6 @@ footer {
   color: var(--muted);
 }
 
-/* Responsive */
 @media (max-width: 820px) {
   .header-inner {
     flex-direction: column;
